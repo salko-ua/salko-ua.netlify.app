@@ -42,6 +42,7 @@ html {
 /* nav styles */
 
 header {
+    display: flex;
     justify-content: center;
     width: 97%;
     float: left;
