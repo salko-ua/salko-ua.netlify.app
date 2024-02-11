@@ -1,7 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LayoutPage from '../layouts/LayoutPage.astro';
 const pageTitle = "Home page";
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<h2>My awesome main page subtitle</h2>
+	<LayoutPage>
+		<p>page</p>
+	</LayoutPage>
 </BaseLayout>
