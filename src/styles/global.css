@@ -32,23 +32,23 @@ html {
     display: block;
     border-radius:10px;
     width: 120px;
-    height: 6px;
-    margin-bottom: 10px;
+    height: 8px;
     background-color: #4c1d95;
 }
 
   
 
 /* nav styles */
-
-header {
-    display: flex;
-    justify-content: center;
-    width: 97%;
-    float: left;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1rem;
+@media screen and (max-width: 636px) {
+    header {
+        display: flex;
+        justify-content: center;
+        width: 97%;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1rem;
+    }
 }
 
 .nav-links {
