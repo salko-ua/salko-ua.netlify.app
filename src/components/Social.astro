@@ -1,13 +1,23 @@
 ---
-const { platform, username } = Astro.props;
+const { platform, username, path } = Astro.props;
 ---
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<div>
+  <a href={`https://www.${platform}.com/${username}`}>
+    {platform}
+    <img src={path} alt={platform} height="25" width="25">
+  </a>
+</div>
 
 <style>
     a {
       padding: 0.5rem 1rem;
-      color: white;
-      background-color: #4c1d95;
+      color: var(--text);
+      display: flex;
+      max-width: 100px;
+      font-family: monospace;
       text-decoration: none;
+    }
+    img {
+      margin-left: 10px;
     }
   </style>
