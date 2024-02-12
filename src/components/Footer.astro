@@ -1,7 +1,7 @@
 ---
 import About from '../components/Footer/about.astro';
 import Contact from '../components/Footer/contact.astro';
-import Link from '../components/Footer/links.astro';
+import Page from '../components/Footer/pages.astro';
 import Service from '../components/Footer/services.astro';
 import Main from '../components/Footer/main.astro';
 ---
@@ -22,6 +22,18 @@ import Main from '../components/Footer/main.astro';
       font-family: monospace;
       font-size: +18px;
     }
+    @media screen and (min-width: 636px) {
+        .bottom {
+            margin: 48px;
+        }
+    }
+    @media screen and (max-width: 636px) {
+        .bottom {
+            margin: 12px;
+        }
+    }
+    
+    
 </style>
 
 <footer class="bg-white dark:bg-gray-900">
@@ -32,12 +44,12 @@ import Main from '../components/Footer/main.astro';
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
         <About />
         <Service />
-        <Link />
+        <Page />
         <Contact />
       </div>
     </div>
 
-    <div class="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
+    <div class="border-t border-gray-100 pt-6 dark:border-gray-800 bottom">
       <div class="text-center sm:flex sm:justify-between sm:text-left">
         <p class="text-sm text-gray-500 dark:text-gray-400">
           <span class="block sm:inline">All right not reserved.</span>
@@ -46,7 +58,7 @@ import Main from '../components/Footer/main.astro';
             class="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
             href="https://www.google.com/"
           >
-            Google.com
+            Google
           </a>
 
           <span>&middot;</span>
