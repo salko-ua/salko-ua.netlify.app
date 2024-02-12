@@ -14,7 +14,7 @@
         display: block;
         text-align: center;
         padding: 10px 0;
-        color: rgb(207, 207, 207);
+        color: var(--text);
         text-decoration: none;
         font-size: 1.2rem;
         font-weight: bold;
@@ -31,17 +31,49 @@
         }
 
         .logotype a {
+            margin: 5px;
+            align-items: center;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--text);
+            color: transparent; 
             display: inline-block;
-            padding: 15px 20px;
+            padding: 10px 5px;
+            padding-bottom: 5px;
             font-size: 1.2rem;
         }
         .logotype {
             float: left;
+        }
+        .logotype-photo {
+            height: 26.4px;
+            width: 26.4px;
+            border-radius: 360px;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .logotype-photo:hover {
+            animation: rotate 0.7s ease-in-out both;
+        }
+        .logotype-element {
+            float: left;
+            margin-right: 8px;
         }
         }
 
 </style>
 
 <div class="logotype">
-    <a href="/">SALKO-UA</a>
+    <a href="/">
+        <div class="logotype-element">
+            <img class="logotype-photo" src="../../public/avatar.webp" alt="це я">
+        </div>
+        <div class="logotype-element">  SALKO-UA</div>
+    </a>
 </div>
