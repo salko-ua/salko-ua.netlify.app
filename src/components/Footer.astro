@@ -1,60 +1,68 @@
 ---
-import Social from './Social.astro';
-import Logotype from './Logotype.astro';
+import About from '../components/Footer/about.astro';
+import Contact from '../components/Footer/contact.astro';
+import Link from '../components/Footer/links.astro';
+import Service from '../components/Footer/services.astro';
+import Main from '../components/Footer/main.astro';
 ---
 
+<!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
 <style>
     footer {
+      box-shadow: 0px 1px 50px rgb(0, 0, 0);
+      float: left;
       width: 100%;
-      float: left;
-
+      display: flex;
+      justify-content: center;
+      background-color: var(--secondary-background);
       font-family: monospace;
-      font-size: 16px;
-
-    }
-    .fouter {
-        background-color: var(--background);
-        box-shadow: 0px -1px 20px black;
-        padding: 24px;
-        height: 93px;
-        width: 100%;
-    }
-    .fouther-social {
-      float: right;
-    }
-    .fouther-logo {
-      float: left;
-      padding: 9px;
-    }
-    .fouther-logo div{
-      font-size: 22px;
-      font-weight: 700;
-    }
-    .deep-footer {
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-        font-family: monospace;
-        font-weight: 200;
-        background-color: #000000;
-        color: #b2b2b2;
-        height: 40px;
-        width: 100%;
+      font-size: +18px;
     }
 </style>
-<footer>
-    <div class="fouter">
-      <div class="fouther-logo">
-          <Logotype padding="0px" margin="0px" color="white"/>
-      </div>
-      <div class="fouther-social">
-        <Social platform="tiktok" username="@salko_ua" path="/tiktok.svg" />
-        <Social platform="twitter" username="salko_ua" path="/twitterx.svg" />
-        <Social platform="github" username="salko-ua" path="/github.svg" />
-        <Social platform="steamcommunity" username="id/salkoua/" path="/steam.svg" />
+
+<footer class="bg-white dark:bg-gray-900">
+  <div class="max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <Main />
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+        <About />
+        <Service />
+        <Link />
+        <Contact />
       </div>
     </div>
-    <div class="deep-footer">
-      © 2024 Copyright: salko-ua.netlify.app
+
+    <div class="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
+      <div class="text-center sm:flex sm:justify-between sm:text-left">
+        <p class="text-sm text-gray-500 dark:text-gray-400">
+          <span class="block sm:inline">All right not reserved.</span>
+
+          <a
+            class="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+            href="https://www.google.com/"
+          >
+            Google.com
+          </a>
+
+          <span>&middot;</span>
+
+          <a
+            class="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+            href="https://github.com/salko-ua/salko-ua.site/blob/main/LICENSE"
+          >
+            License
+          </a>
+        </p>
+
+        <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0 dark:text-gray-400">
+          Copyright &copy; 2024 - All right not reserved
+        </p>
+      </div>
     </div>
+  </div>
 </footer>
