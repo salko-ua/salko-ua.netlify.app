@@ -3,14 +3,13 @@ const { platform, username, path } = Astro.props;
 ---
 <div>
   <a href={`https://www.${platform}.com/${username}`}>
-    {platform}
-    <img src={path} alt={platform} height="25" width="25">
+    <img src={path} alt={platform} height="35" width="35">
   </a>
 </div>
 
 <style>
     a {
-      padding: 0.5rem 1rem;
+      padding: 0.5rem;
       color: var(--text);
       display: flex;
       max-width: 100px;
@@ -18,6 +17,9 @@ const { platform, username, path } = Astro.props;
       text-decoration: none;
     }
     img {
-      margin-left: 10px;
+      margin-left: 5px;
+    }
+    div {
+      float: left;
     }
   </style>

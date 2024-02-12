@@ -1,34 +1,60 @@
 ---
 import Social from './Social.astro';
+import Logotype from './Logotype.astro';
 ---
 
 <style>
     footer {
-      width: 97%;
-      background-color: black;
-      min-height: 100px;
+      width: 100%;
       float: left;
-      padding: 20px;
-      box-shadow: 0px -4px var(--border);
-      margin-left: 1.5%;
-      margin-right: 1.5%;
+
+      font-family: monospace;
+      font-size: 16px;
+
     }
-    .social {
+    .fouter {
+        background-color: var(--background);
+        box-shadow: 0px -1px 20px black;
+        padding: 24px;
+        height: 93px;
+        width: 100%;
+    }
+    .fouther-social {
       float: right;
-      margin-right: 20px;
     }
-    .others {
+    .fouther-logo {
       float: left;
+      padding: 9px;
+    }
+    .fouther-logo div{
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .deep-footer {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        font-family: monospace;
+        font-weight: 200;
+        background-color: #000000;
+        color: #b2b2b2;
+        height: 40px;
+        width: 100%;
     }
 </style>
-
 <footer>
-    <div class="element social">
-      <Social platform="twitter" username="astrodotbuild" path="/twitter.svg"/>
-      <Social platform="github" username="withastro" path="github.svg"/>
-      <Social platform="youtube" username="astrodotbuild" path="youtube.svg"/>
+    <div class="fouter">
+      <div class="fouther-logo">
+          <Logotype padding="0px" margin="0px" color="white"/>
+      </div>
+      <div class="fouther-social">
+        <Social platform="tiktok" username="@salko_ua" path="/tiktok.svg" />
+        <Social platform="twitter" username="salko_ua" path="/twitterx.svg" />
+        <Social platform="github" username="salko-ua" path="/github.svg" />
+        <Social platform="steamcommunity" username="id/salkoua/" path="/steam.svg" />
+      </div>
     </div>
-    <div class="element others">
-      <div>s</div>
+    <div class="deep-footer">
+      © 2024 Copyright: salko-ua.netlify.app
     </div>
 </footer>
