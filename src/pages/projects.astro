@@ -4,8 +4,19 @@ import LayoutPage from '../layouts/LayoutPage.astro';
 import CardLayout from '../layouts/CardLayout.astro';
 const pageTitle = "Projects";
 ---
+
+<style>
+	.description {
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+	}
+</style>
+
 <BaseLayout pageTitle={pageTitle}>
 	<LayoutPage>
-		<CardLayout />
+		<div class="description"><h1 class="mb-5 mt-5">My projects</h1></div>
+		<div class="description mb-10"><CardLayout /></div>
 	</LayoutPage>
 </BaseLayout>
