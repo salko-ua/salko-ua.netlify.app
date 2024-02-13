@@ -1,7 +1,7 @@
 *{  
     --text: #dfe0fd;
     --border: #dfe0fd96;
-    --background: #1c1c1c;
+    --background: #232427;
     --second-background: hsla(0, 0%, 43%, 0.058);
     --primary: #7d87f5;
     --secondary: #830ca4;
@@ -50,6 +50,7 @@ body {
 }
   
 * {
+    z-index: 1;
     box-sizing: border-box;
 }
 
@@ -70,10 +71,9 @@ h1 {
 }
 
 .nav-links a {
-    padding: 5px;
     color: var(--text);
     display: block;
-    padding: 10px 0;
+    padding: 10px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
@@ -82,8 +82,8 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    border-radius: 10px;
-    background-color: #1a1a1a;
+    border-radius: 10px;    
+    background-color: #282828;
 }
 
 .expanded {
@@ -105,11 +105,11 @@ h1 {
         display: inline-block;
         margin: 5px 5px;
         padding-top: 10px;
-        padding-bottom: 5px;
         padding-left: 10px;
         padding-right: 10px;
     }
     header {
+        z-index: 10;
         background-color: var(--background);
         height: 60px;
         position: fixed;
@@ -123,6 +123,7 @@ h1 {
 
 @media screen and (max-width: 636px) {
     .nav-links {
+        display: none;
         height: 100%;
         
     }
@@ -135,16 +136,17 @@ h1 {
         
     }
     header nav {
+
         position: relative
     }
     header {
+        z-index: 10;
         background-color: var(--background);
         box-shadow: 0px 1px 10px black;
         position: fixed;
         top: 0;
-        height: 60px;
+        height: 50px;
         padding: 10px 0px;
-        display: flex;
         justify-content: center;
         width: 100%;
         float: left;
