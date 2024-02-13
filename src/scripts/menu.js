@@ -82,8 +82,9 @@ documentReady(function() {
     var sample = new SideMenu(document.querySelector('.wui-side-menu'))
     const elements = document.querySelectorAll('#link-to-page')
     for (const element of elements) {
-        console.log(element)
-        if (window.location.href.includes(element.href)) {
+        const url = new URL(element.href).pathname;
+        const url2 = new URL(window.location.href).pathname;
+        if (url === url2) {
             element.classList.add("active")
         }
         

@@ -3,8 +3,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import LayoutPage from '../../layouts/LayoutPage.astro';
 const pageTitle = "KOTEKBOT";
 ---
+
+<style>
+	.center {
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+	}
+</style>
+
+
 <BaseLayout pageTitle={pageTitle}>
 	<LayoutPage>
-        <h1>{pageTitle}</h1>
+        <div class="center">
+			<h1>{pageTitle}</h1>
+		</div>
 	</LayoutPage>
 </BaseLayout>

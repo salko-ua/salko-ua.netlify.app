@@ -1,20 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LayoutPage from '../layouts/LayoutPage.astro';
+import HomePageLayout from '../layouts/HomePageLayout.astro';
 const pageTitle = "Home page";
 ---
 
-<style>
-	.description {
-		height: 100px;
-		display: flex;
-		justify-content: center;
-		height: 100%;
-	}
-</style>
-
 <BaseLayout pageTitle={pageTitle}>
 	<LayoutPage>
-		<div class="description"><h1 class="mb-5 mt-5">Hello everyone!</h1></div>
+		<HomePageLayout />
 	</LayoutPage>
 </BaseLayout>
