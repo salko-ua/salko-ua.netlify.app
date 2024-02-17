@@ -1,189 +1,35 @@
-
+---
+---
 
 <style>
     @import url('https://fonts.cdnfonts.com/css/lato');
-    .main {
+    .center {
+        margin-top: 200px
+    }
+    h1 {
+        text-align: center;
+        width: 100%;
+    }
+    p {
         display: flex;
         justify-content: center;
-        height: 100%;
-        font-family: sans-serif;
-        margin-top: 40px;
+        width: 100%;
     }
-    .container-left {
-        padding: 30px;
-    }
-    .container-right {
-        padding: 30px;
-        
-    }
-    .button {
+    a {
+        text-align: center;
+        float: left;
         color: white;
         background-color: #231cee;
-        padding: 22px 50px;
-        border-radius: 10px;
+        padding: 15px 54px;
+        border-radius: 360px;
         font-family: 'lato';
         font-weight: 500;
         font-size: 20px;
         letter-spacing: 3px;
     }
-    .button:hover {
-        background-color: #000000;
-    }
-    h4, h5 {
-        font-family: 'lato';
-        letter-spacing: 3px;
-        word-spacing: 3px;
-        margin-bottom: 20px;
-    }
-    h5 {
-        display: table;
-    }
-    p {
-        font-size: 18px;
-    }
-    .text-rights {
-        margin-bottom: 40px;
-        max-width: 400px;
-        min-width: 320px;
-    }
-    .p-button {
-        margin-top: 50px;
-    }
-    .text {
-        margin-bottom: 20px;
-        max-width: 520px;
-        min-width: 320px;
-    }
-    .links a{
-        color: #14b8a6;
-        margin-right: 20px;
-    }
-    .links a:hover{
-        color: white;
-    }
-    .right-logo, .left-description {
-        float: left;
-    }
-    .svg-img {
-        margin-right: 30px;
-    }
-    
-    @media screen and (max-width: 742px) {
-        .centered {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
-        .text-rights {
-            float: left;
-            margin-top: 20px;
-        }
-    }
-    @media screen and (max-width: 1300px) {
-        .mobile {
-            display: block;
-            float: left;
-        }
-        .desktop {
-            display: none;
-        }
-    }
-    @media screen and (min-width: 1300px) {
-        .mobile {
-            display: none;
-        }
-        .desktop {
-            display: block;
-        }
-    }
-    @media screen and (min-width: 742px) {
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-        .main {
-            margin-bottom: 50px;
-        }
-        
-    }
 </style>
-
-
-<div class="main">
-    <div class="container">
-        <div class="centered">
-            <div class="container-left">
-                <h4 class="welcome">
-                    READY TO GET STARTED?
-                </h4>
-                <p class="text">
-                    Welcome to my portfolio! Here, you can delve into a curated collection of my recent projects and discover more about my background and expertise. Whether you're interested in exploring my creative endeavors or learning about my professional journey, this site provides a comprehensive overview of my work and skills. Take a closer look to gain insights into my approach and capabilities, and feel free to reach out for further information or collaboration opportunities.
-                </p>
-                <p class="links">
-                    <a href="https://github.com/salko-ua/salko-ua.site/blob/main/LICENSE" class="link">
-                        License
-                    </a>
-                    <a href="https://www.instagram.com/salko_ua/" class="link">
-                        Instagram
-                    </a>
-                    <a href="https://twitter.com/salko_ua" class="link">
-                        Twitter
-                    </a>
-                </p>
-                <p class="p-button">
-                    <a href="/projects" class="button">LEARN MORE</a>
-                </p>
-
-            </div>
-        </div>
-        
-        <div class="centered">
-            <div class="container-right">
-
-                <div class="container-right-element">
-                    <div class="right-logo">
-                        <img class="svg-img desktop" src="/github_rounded.svg" alt="github.icon" height="50px" width="50px">
-                    </div>
-                    <div class="left-description">
-                        <h5 class="name">
-                            <img class="svg-img mobile" src="/github_rounded.svg" alt="github.icon" height="50px" width="50px">
-                            <div class="left-description"><a href="https://github.com/salko-ua" target="_blank" class="link">MY GITHUB</a></div>
-                        </h5>
-                        <p class="text-rights">
-                            ou're welcome to browse through my GitHub repository, where you'll find a diverse collection of projects readily available for exploration and collaboration.
-                        </p>
-                    </div>
-                </div>
-                <div class="container-right-element">
-                    <div class="right-logo">
-                        <img class="svg-img desktop" src="/telegram_rounded.svg" alt="telegram.icon" height="50px" width="50px">
-                    </div>
-                    <div class="left-description">
-                        <h5 class="name">
-                            <img class="svg-img mobile" src="/telegram_rounded.svg" alt="telegram.icon" height="50px" width="50px">
-                            <div class="left-description"><a href="https://t.me/salkooua" target="_blank" class="link">MY TELEGRAM</a></div>
-                        </h5>
-                        <p class="text-rights">
-                            Just a quick note: If you ever want to collaborate or discuss anything, feel free to reach out to me on Telegram. I'm always open to cooperation and eager to chat!"
-                        </p>
-                    </div>
-                </div>
-                <div class="container-right-element">
-                    <div class="right-logo">
-                        <img class="svg-img desktop" src="/ukraine_rounded.svg" alt="ukraine.icon" height="50px" width="50px">
-                    </div>
-                    <div class="left-description">
-                        <h5 class="name">
-                            <img class="svg-img mobile" src="/ukraine_rounded.svg" alt="ukraine.icon" height="50px" width="50px">
-                            <div class="left-description"><a href="https://u24.gov.ua/" target="_blank" class="link">SUPPORT UKRAINE</a></div>
-                        </h5>
-                        <p class="text-rights links">
-                            Also support Ukraine in its struggle for sovereignty and territorial integrity in this war against usurpers and terrorists - <a href="https://u24.gov.ua/" target="_blank" class="link">United24</a>
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+    
+<div class="center">
+    <h1>Check information about me</h1>
+    <p><a href="/about">click here</a></p>
 </div>
